@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html lang="en"> 
+<head>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> </script> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="/style.css" />  
+  <script>
+    function myF1(){
+      $('#b2').css('display','block');
+      $('#b1').css('display','none');
+      $('.bar2').css('display','block');
+      $('#header').css('height','160px');
+      $('body').css('padding-top','100px');
+       $('#name').css('margin-top','-90px');
+      
+    }
+    function myF2(){
+      $('#b2').css('display','none');
+      $('#b1').css('display','block');
+      $('.bar2').css('display','none');
+      $('#header').css('height','70px');
+      $('body').css('padding-top','20px');
+       $('#name').css('margin-top','-10px');
+      
+    }
+  </script>
+  <script>
+    $(document).ready(function(){
+      //alert(window.innerWidth)
+      $(window).on('resize', function(){
+        if(window.innerWidth>1000){
+      $('#b2').css('display','none');
+      $('#b1').css('display','none');
+      $('.bar2').css('display','none');
+      $('#header').css('height','70px');
+      $('body').css('padding-top','20px');
+       $('#name').css('margin-top','-10px');         
+          
+        }
+        else{
+$('#b2').css('display','none');
+      $('#b1').css('display','block');
+      $('.bar2').css('display','none');
+      $('#header').css('height','70px');
+      $('body').css('padding-top','20px');
+       $('#name').css('margin-top','-10px');           
+        }
+      })
+      
+      
+    })
+  </script>
+</head>
+<div id="main">  
+<div class="head" id="header">
+  <div id="navigation">
+  <nav id="nav-bar">
+      <a class="nav-link" href="#ea">Sales</a>
+      <a class="nav-link" href="#two">Features</a>
+    <a class="nav-link" href="#flexy">Pricing <i class="fa fa-money"></i></a>
+  </nav>
+  <nav id="nav-bar2">
+    <i class="fa fa-bars" onclick="myF1()" id="b1"></i>
+    <i class="fa fa-bars" onclick="myF2()" id="b2"></i>
+    <ul class="bar2">
+      <li><a class="nav-link" href="#ea">Sales</a></li>
+      <li><a class="nav-link" href="#two">Features</a></li>
+      <li><a class="nav-link" href="#flexy">Pricing <i class="fa fa-money"></i></a></li>
+    </ul>
+      </nav>
+    </div>
+  </div>
+  
+<div id="name"><p id="titl"><img src="https://cdn.pixabay.com/photo/2017/01/13/01/22/rocket-1976107_960_720.png" id="header-img">Smart Electronics</p></div>
+  
+ </div>
+<body>
+  <div id="ea">
+    <form method="POST" id="form" action="https://www.freecodecamp.com/email-submit">
+      <p><label for="email">Get Our Latest Discount Offers Instantly</label></p>
+      <input type="email" id ="email" onfocus="this.placeholder=''" onblur="this.placeholder='email@address.com'" placeholder="email@address.com" name="email" required><br><br>
+      <input type="submit" id="submit" value="Submit >>">
+    </form>
+  </div>
+  
+  <div id="one">
+<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/96viUaXmFLQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+	<div id="two">
+   <div class="flex flexy">
+  <p class="p0"><img src="https://cdn.pixabay.com/photo/2016/11/12/05/05/smartphone-1818253_960_720.png" alt="phone" id="pic" style="width:100px"></p><div class="p2"><p class="subhead s0">Innovative products</p><p class="p3">We have all of the latest smart phone devices in stock.</p></div>
+    </div>
+    <div class="flex flexy">
+  <p class="p1"><img src="https://cdn.pixabay.com/photo/2016/12/18/13/45/download-1915753_960_720.png" alt="phone" id="pic2"></p><div class="p2"><p class="subhead">Free Downloads</p><p>Download all of the software updates you need for your devices through our website.</p></div>
+    </div>
+    
+    <div class="flex flexy">
+  <p class="p1"><img src="https://cdn.pixabay.com/photo/2016/12/18/12/49/cyber-security-1915628_960_720.png" alt="phone" id="pic3"></p><div class="p2"><p class="subhead">Security Assurance</p><p>Your personal information is secure and will be kept private.</p></div>
+    </div>
+  </div>
+  
+    <div id= "four">
+      <div class="box1">
+     <h4>iPhone</h4>
+      <p class="b4">$400</p>
+      <p class="rest">Lorem ipsum.</p>
+      <p class="rest">Lorem ipsum dolor.</p>
+      <p class="rest">Lorem ipsum.</p>
+      <p class="rest">Lorem ipsum.</p>
+        <button class="select">Select</button>
+      </div>  
+      
+      <div class="box2">
+    <h4>GoPro Hero 7</h4>
+      <p class="b4">$320</p>
+      <p class="rest">Lorem ipsum.</p>
+      <p class="rest">Lorem ipsum dolor.</p>
+      <p class="rest">Lorem ipsum.</p>
+      <p class="rest">Lorem ipsum.</p>
+        <button class="select">Select</button>
+      </div>
+      
+      <div class="box3">
+    <h4>PlayStation 4</h4>
+      <p class="b4">$250</p>
+      <p class="rest">Lorem ipsum.</p>
+      <p class="rest">Lorem ipsum dolor.</p>
+      <p class="rest">Lorem ipsum.</p>
+      <p class="rest">Lorem ipsum.</p>  
+        <button class="select">Select</button>
+    </div>
+      
+    </div>
+
+  <div id= "three">
+    <p class="bL1"><a href="">Privacy</a><a href="">Terms and Conditions</a><a href="">Contact Us</a></p>
+    <p class="bL2">&copy 2019, Smart Electronics</p>
+  </div>
+</body>
+</html>
+
